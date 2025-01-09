@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KMC Child Safety Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 mt-0">
+        <div class="row gx-0">
+            <div class="col-lg-10 px-5 text-start d-none d-lg-flex">
+                <div class="h-100 d-inline-flex align-items-center me-2">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>KMC HQ, New Market Area, Kolkata</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 me-2">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 05.00 PM</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 ">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 px-5 text-center d-flex"> 
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-3 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link" href="">English</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">हिन्दी</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">বাংলা</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img src="./img/kmc logo.png" alt="KMC-Logo" class="d-inline-block align-text-top mh-100 mw-100">
+            <h2 class="m-0 text-primary">KMC Child Safety Portal</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="./index.html" class="nav-item nav-link">Home</a>
+                <a href="./contact.html" class="nav-item nav-link">About Us</a>
+                <a href="./login.html" class="nav-item nav-link">Login</a>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Understanding Child Safety</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="./policies.html" class="dropdown-item">Child Safety Policies</a>
+                        <a href="./recognize_abuse.html" class="dropdown-item">Recognizing Child Abuse</a>
+                        <a href="#" class="dropdown-item active">Responding To Child Abuse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./report_form.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Report Case<i class="fa fa-arrow-right ms-3"></i></a>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel_2.jpg'>">
+                <img class="img-fluid" style="height: 90vh" src="img/carousel_2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Responding To Child Abuse</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Understanding Our First Steps To Provide Comfort To A Victim Of Child Abuse</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                        <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/M1SQue6khBA?si=Sdm07_pMkJfiC_aJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">Fighting Child Abuse</h6>
+                        <h1 class="mb-4">Responding to Abuse: First steps towards providng comfort and ensuring safety of victim</h1>
+                        <p>Responding to child abuse cases is crucial to protect the immediate safety and well-being of the child. Early intervention can prevent further harm and help the child heal from trauma. It also ensures that abusers are held accountable, potentially preventing abuse of other children. Addressing these cases supports the creation of a safer, more nurturing community for all children.
+                            <br>
+                            Please file a report using the 'REPORT CASE' button below.
+                            <br>
+                            After reporting, please follow the 'First Response' steps given below to provide comfort to the victim.
+                        </p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+   <!--Accordian Start-->
+   <div class="container-xxl py-3 px-1 accordion" id="accordionExample">
+
+    <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+      <h1 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Physical Abuse: First Response
+        </button>
+      </h1>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row g-4">
+            <div class="col-md-12 py-2 px-lg-4">
+                <p>
+                    After reporting suspected child physical abuse, it is important to take specific steps to ensure the child's immediate safety and well-being. 
+                </p>
+                <ul class="list-unstyled">
+                    <li><strong>1. Ensure Immediate Safety</strong>
+                        <ul>
+                          <li>Remove the Child from Danger: If the child is in immediate danger, remove them from the situation to a safe environment.</li>
+                          <li>Stay Calm: Maintain a calm demeanour to avoid further distressing the child.</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Provide Emotional Support</strong>
+                        <ul>
+                          <li>Reassure the Child: Let the child know that they are safe now and that it is not their fault.</li>
+                          <li>Listen Actively: Offer a supportive presence, allowing the child to express their feelings without interruption or judgement.</li>
+                        </ul>
+                    </li>
+                    <li><strong>3. Avoid Further Trauma</strong>
+                        <ul>
+                          <li>Do Not Interrogate: Avoid asking the child detailed or leading questions about the abuse. This can be re-traumatizing and can complicate official investigations.</li>
+                          <li>Respect Privacy: Ensure the child’s privacy and confidentiality to protect them from further emotional harm or stigma.</li>
+                        </ul>
+                    </li>
+                    <li><strong>4. Seek Medical Attention</strong>
+                        <ul>
+                          <li>Medical Examination: Ensure the child receives a thorough medical examination to address any physical injuries and to document evidence of abuse. </li>
+                          <li>Mental Health Support: Arrange for the child to receive psychological support or counselling to help them cope with trauma. </li>
+                        </ul>
+                    </li>
+                    <li><strong>5. Plan for Ongoing Safety</strong>
+                        <ul>
+                          <li>Develop a Safety Plan: Work with authorities to develop a safety plan for the child, which may include temporary placement with a trusted relative or in a safe shelter.</li>
+                          <li>Monitor the Situation: Stay informed about the child’s situation and continue to provide support and advocacy as needed.</li>
+                          <li>Detailed documentation: Keep a detailed record of any signs of abuse, interactions with the child, and steps taken. This can be useful for authorities.</li>
+                        </ul>
+                    </li>
+                    <li><strong>6. Educate Yourself</strong>
+                        <ul>
+                          <li>Learn About Child Protection Laws: Understand the legal framework and policies regarding child protection in your area. Refer to documents like the Protection of Children from Sexual Offences (POCSO) Act, 2012.</li>
+                          <li>Training and Resources: Consider undergoing training on child abuse awareness and response to better support affected children in the future.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Emotional Abuse: First Response
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <div class="row g-4">
+                <div class="col-md-12 py-2 px-lg-4">
+                    <p>
+                        After reporting a case of child emotional abuse, it is crucial to take appropriate follow-up actions to ensure the child's safety and well-being.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>1. Ensure Immediate Safety</strong>
+                            <ul>
+                                <li>Remove the Child from Immediate Danger: If the child is in immediate danger, ensure they are in a safe place. This might involve moving the child to a safe environment, such as a relative’s home or a shelter.</li>
+                                <li>Seek Medical Attention: If the child shows signs of severe emotional distress or self-harm, seek medical or psychological assistance immediately.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Provide Emotional Support</strong>
+                            <ul>
+                                <li>Reassure the Child: Offer reassurance and let the child know they are not to blame for the abuse. It's important to validate their feelings and let them know they are safe now.</li>
+                                <li>Listen Actively: Give the child a chance to express their feelings and experiences. Listening without judgement can help in building trust and providing comfort.</li>
+                            </ul>
+                        </li>
+                        <li><strong>3. Follow Reporting Protocols</strong>
+                            <ul>
+                              <li>Report to Authorities: Ensure the case is reported to the appropriate child protection authorities if it hasn't been already. This can include local Child Welfare Committees (CWC), the police, or child protection services.</li>
+                              <li>Document the Abuse: Keep detailed records of the abuse, including dates, times, and descriptions of incidents. This documentation can be critical for investigations and legal proceedings.</li>                                    
+                            </ul>
+                        </li>
+                        <li><strong>4. Engage with Child Protection Services</strong>
+                            <ul>
+                                <li>Coordinate with CWC: Work with the local Child Welfare Committee to ensure the child’s case is being managed according to legal and child protection standards.</li>                                  
+                                <li>Seek Counselling Services: Arrange for counselling or therapy for the child. Psychological support can help the child cope with the trauma and begin the healing process.</li>
+                            </ul>
+                        </li>
+                        <li><strong>5. Create a Supportive Environment</strong>
+                            <ul>
+                                <li>Educate and Train Staff: If you are in an educational or childcare setting, ensure that all staff members are trained in recognizing and responding to signs of emotional abuse.</li>
+                                <li>Develop Safety Plans: Work with child protection professionals to develop safety plans that address the child’s immediate and long-term needs.</li>
+                            </ul>
+                        </li>
+                        <li><strong>6. Monitor and Follow Up</strong>
+                            <ul>
+                                <li>Regular Check-ins: Maintain regular contact with the child and their caregivers to monitor the child’s well-being and ensure they are receiving the necessary support.</li>
+                                <li>Ongoing Support: Provide ongoing emotional and psychological support to help the child recover from the abuse and build resilience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Sexual Abuse: First Response
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <div class="row g-4">
+                <div class="col-md-12 py-2 px-lg-4">
+                    <p>
+                        After reporting a case of child Child labour and exploitation, it is crucial to take appropriate follow-up actions to ensure the child's safety and well-being.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>1. Ensure Immediate Safety</strong>
+                            <ul>
+                                <li>Remove the Child from Immediate Danger: If the child is in immediate danger, ensure they are in a safe place. This might involve moving the child to a safe environment, such as a relative’s home or a shelter.</li>
+                                <li>Seek Medical Attention: If the child shows signs of physical injury, distress or self-harm, seek medical or psychological assistance immediately.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Provide Emotional Support</strong>
+                            <ul>
+                                <li>Reassure the Child: Offer reassurance and let the child know they are not to blame for the abuse. It's important to validate their feelings and let them know they are safe now.</li>
+                                <li>Listen Actively: Give the child a chance to express their feelings and experiences. Listening without judgement can help in building trust and providing comfort.</li>
+                            </ul>
+                        </li>
+                        <li><strong>3. Follow Reporting Protocols</strong>
+                            <ul>
+                              <li>Report to Authorities: Ensure the case is reported to the appropriate child protection authorities if it hasn't been already. This can include local Child Welfare Committees (CWC), the police, or child protection services.</li>
+                              <li>Document the Abuse: Keep detailed records of the abuse, including dates, times, and descriptions of incidents. This documentation can be critical for investigations and legal proceedings.</li>                                    
+                            </ul>
+                        </li>
+                        <li><strong>4. Engage with Child Protection Services</strong>
+                            <ul>
+                                <li>Coordinate with CWC: Work with the local Child Welfare Committee to ensure the child’s case is being managed according to legal and child protection standards.</li>                                  
+                                <li>Seek Counselling Services: Arrange for counselling or therapy for the child. Psychological support can help the child cope with the trauma and begin the healing process.</li>
+                            </ul>
+                        </li>
+                        <li><strong>5. Create a Supportive Environment</strong>
+                            <ul>
+                                <li>Educate and Train Staff: If you are in an educational or childcare setting, ensure that all staff members are trained in recognizing and responding to signs of emotional abuse.</li>
+                                <li>Develop Safety Plans: Work with child protection professionals to develop safety plans that address the child’s immediate and long-term needs.</li>
+                            </ul>
+                        </li>
+                        <li><strong>6. Monitor and Follow Up</strong>
+                            <ul>
+                                <li>Regular Check-ins: Maintain regular contact with the child and their caregivers to monitor the child’s well-being and ensure they are receiving the necessary support.</li>
+                                <li>Ongoing Support: Provide ongoing emotional and psychological support to help the child recover from the abuse and build resilience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Child Labour and Exploitation: First Response
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row g-4">
+                <div class="col-md-12 py-2 px-lg-4">
+                    <p>
+                        After reporting a case of child Child labour and exploitation, it is crucial to take appropriate follow-up actions to ensure the child's safety and well-being.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>1. Ensure Immediate Safety</strong>
+                            <ul>
+                                <li>Remove the Child from Immediate Danger: If the child is in immediate danger, ensure they are in a safe place. This might involve moving the child to a safe environment, such as a relative’s home or a shelter.</li>
+                                <li>Seek Medical Attention: If the child shows signs of physical injury, distress or self-harm, seek medical or psychological assistance immediately.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Provide Emotional Support</strong>
+                            <ul>
+                                <li>Reassure the Child: Offer reassurance and let the child know they are not to blame for the abuse. It's important to validate their feelings and let them know they are safe now.</li>
+                                <li>Listen Actively: Give the child a chance to express their feelings and experiences. Listening without judgement can help in building trust and providing comfort.</li>
+                            </ul>
+                        </li>
+                        <li><strong>3. Follow Reporting Protocols</strong>
+                            <ul>
+                              <li>Report to Authorities: Ensure the case is reported to the appropriate child protection authorities if it hasn't been already. This can include local Child Welfare Committees (CWC), the police, or child protection services.</li>
+                              <li>Document the Abuse: Keep detailed records of the abuse, including dates, times, and descriptions of incidents. This documentation can be critical for investigations and legal proceedings.</li>                                    
+                            </ul>
+                        </li>
+                        <li><strong>4. Engage with Child Protection Services</strong>
+                            <ul>
+                                <li>Coordinate with CWC: Work with the local Child Welfare Committee to ensure the child’s case is being managed according to legal and child protection standards.</li>                                  
+                                <li>Seek Counselling Services: Arrange for counselling or therapy for the child. Psychological support can help the child cope with the trauma and begin the healing process.</li>
+                            </ul>
+                        </li>
+                        <li><strong>5. Create a Supportive Environment</strong>
+                            <ul>
+                                <li>Educate and Train Staff: If you are in an educational or childcare setting, ensure that all staff members are trained in recognizing and responding to signs of emotional abuse.</li>
+                                <li>Develop Safety Plans: Work with child protection professionals to develop safety plans that address the child’s immediate and long-term needs.</li>
+                            </ul>
+                        </li>
+                        <li><strong>6. Monitor and Follow Up</strong>
+                            <ul>
+                                <li>Regular Check-ins: Maintain regular contact with the child and their caregivers to monitor the child’s well-being and ensure they are receiving the necessary support.</li>
+                                <li>Ongoing Support: Provide ongoing emotional and psychological support to help the child recover from the abuse and build resilience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="accordion-item wow fadeIn" data-wow-delay="0.9s">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Cyber-Based Abuse and Bullying
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row g-4"><div class="col-md-12 py-2 px-lg-4">
+                    <p>
+                        After reporting a case of child Cyber-Based Abuse and Bullying, it is crucial to take appropriate follow-up actions to ensure the child's safety and well-being.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>1. Ensure Immediate Safety</strong>
+                            <ul>
+                                <li>Remove the Child from Immediate Danger: If the child is in immediate danger, ensure they are in a safe place. This might involve moving the child to a safe environment, such as a relative’s home or a shelter. In case the child has access to technology which is the cause of abuse, for immediate safety, this device may be removed as the first step.</li>
+                                <li>Seek Medical Attention: If the child shows signs of severe emotional distress or self-harm, seek medical or psychological assistance immediately.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Provide Emotional Support</strong>
+                            <ul>
+                                <li>Reassure the Child: Offer reassurance and let the child know they are not to blame for the abuse. It's important to validate their feelings and let them know they are safe now.</li>
+                                <li>Listen Actively: Give the child a chance to express their feelings and experiences. Listening without judgement can help in building trust and providing comfort.</li>
+                            </ul>
+                        </li>
+                        <li><strong>3. Follow Reporting Protocols</strong>
+                            <ul>
+                              <li>Report to Authorities: Ensure the case is reported to the appropriate child protection authorities if it hasn't been already. This can include local Child Welfare Committees (CWC), the police, or child protection services.</li>
+                              <li>Document the Abuse: Keep detailed records of the abuse, including dates, times, and descriptions of incidents. This documentation can be critical for investigations and legal proceedings.</li>                                    
+                            </ul>
+                        </li>
+                        <li><strong>4. Engage with Child Protection Services</strong>
+                            <ul>
+                                <li>Coordinate with CWC: Work with the local Child Welfare Committee to ensure the child’s case is being managed according to legal and child protection standards.</li>                                  
+                                <li>Seek Counselling Services: Arrange for counselling or therapy for the child. Psychological support can help the child cope with the trauma and begin the healing process.</li>
+                            </ul>
+                        </li>
+                        <li><strong>5. Create a Supportive Environment</strong>
+                            <ul>
+                                <li>Educate and Train Staff: If you are in an educational or childcare setting, ensure that all staff members are trained in recognizing and responding to signs of emotional abuse.</li>
+                                <li>Develop Safety Plans: Work with child protection professionals to develop safety plans that address the child’s immediate and long-term needs.</li>
+                            </ul>
+                        </li>
+                        <li><strong>6. Monitor and Follow Up</strong>
+                            <ul>
+                                <li>Regular Check-ins: Maintain regular contact with the child and their caregivers to monitor the child’s well-being and ensure they are receiving the necessary support.</li>
+                                <li>Ongoing Support: Provide ongoing emotional and psychological support to help the child recover from the abuse and build resilience.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+    <!--Accordian End-->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-4">
+                    <h5 class="text-white mb-4">A Joint Initiative of The Kolkata Municipal Corporation, Dept of Education & Teach For India</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>KMC HQ, New Market Area, Kolkata</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="./index.html">Home</a>
+                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="./policies.html#KMC_guidelines">KMC Child Safety Guidelines</a>
+                    <a class="btn btn-link" href="./recognize_abuse.html">Recognizing Child Abuse</a>
+                    <a class="btn btn-link" href="#">Responding To Child Abuse</a>
+                    <a class="btn btn-link" href="./login.html">Login</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Enter Your Email To Receive Updates</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">The Kolkata Municipal Corporation</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Report Case float -->
+    <a href="./report_form.html" id="fixed-report-button"  class="btn btn-primary d-block d-lg-none rotate-button">Report Case</a>
+    
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KMC Child Safety Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 mt-0">
+        <div class="row gx-0">
+            <div class="col-lg-10 px-5 text-start d-none d-lg-flex">
+                <div class="h-100 d-inline-flex align-items-center me-2">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>KMC HQ, New Market Area, Kolkata</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 me-2">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 05.00 PM</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 ">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 px-5 text-center d-flex"> 
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-3 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link" href="">English</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">हिन्दी</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">বাংলা</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img src="./img/kmc logo.png" alt="KMC-Logo" class="d-inline-block align-text-top mh-100 mw-100">
+            <h2 class="m-0 text-primary">KMC Child Safety Portal</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="./index.html" class="nav-item nav-link">Home</a>
+                <a href="./contact.html" class="nav-item nav-link">About Us</a>
+                <a href="./login.html" class="nav-item nav-link">Login</a>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Understanding Child Safety</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="./policies.html" class="dropdown-item">Child Safety Policies</a>
+                        <a href="#" class="dropdown-item active">Recognizing Child Abuse</a>
+                        <a href="./recognize_abuse.html" class="dropdown-item">Responding To Child Abuse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./report_form.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Report Case<i class="fa fa-arrow-right ms-3"></i></a>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel_2.jpg'>">
+                <img class="img-fluid" style="height: 90vh" src="img/carousel_2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Understanding and Recognizing Child Abuse</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Understanding What Consitutes Child Abuse, Types and Recognizing Abuse Symptoms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                        <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/M1SQue6khBA?si=Sdm07_pMkJfiC_aJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">What Is Child Abuse ?</h6>
+                        <h1 class="mb-4">Understanding what consitutes child abuse & the types of child abuse</h1>
+                        <p>Child abuse or maltreatment constitutes all forms of physical and/or emotional ill-treatment, sexual abuse, neglect or negligent treatment or commercial or other exploitation, resulting in actual or potential harm to the child’s health, survival, development or dignity in the context of a relationship of responsibility, trust or power (Source: A report of the consultation on child abuse prevention, WHO, Geneva, 29-31 March 1999, defines child abuse as). </p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-3">
+        <div class="container">
+            <div class="p-lg-3 pe-lg-5">
+                <h4 class="text-primary text-center">Types of Child Abuse</h4>
+            </div>
+            <div class="row g-6">
+                <div class="col-md-4 wow fadeIn hover-div mb-4" data-wow-delay="0.1s">
+                    <a href="#headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    <div class="d-flex align-items-center mb-4 ">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3 px-4">
+                            <i class="fas fa-hand-rock fa-2x text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Physical Abuse</h5>
+                    </div>
+                    <span>Physical abuse refers to any action that physically injures or harms a child intentionally. </span>
+                    </a>
+                </div>
+                <div class="col-md-4 wow fadeIn hover-div mb-4 p-2" data-wow-delay="0.3s">
+                    <a href="#headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa-solid fa-person-harassing fa-2x text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Emotional Abuse</h5>
+                    </div>
+                    <span>Any act that results in psychological harm or trauma to a child, affecting their self-esteem and emotional well-being.</span>
+                    </a>
+                </div>
+                <div class="col-md-4 wow fadeIn hover-div mb-4 p-2" data-wow-delay="0.5s">
+                    <a href="#headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa-solid fa-mars-and-venus-burst fa-2x text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Sexual Abuse</h5>
+                    </div>
+                    <span>Any act that involves any form of sexual activity imposed upon a child.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-8">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4 wow fadeIn hover-div mb-4 p-2" data-wow-delay="0.7s">
+                    <a href="#headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa-solid fa-person-digging fa-2x text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Child Labour</h5>
+                    </div>
+                    <span>Child Labour and Exploitation refer to the kind of work where children deprived of their childhood.</span>
+                    </a>
+                </div>
+                <div class="col-md-4 wow fadeIn hover-div mb-4 p-2" data-wow-delay="0.9s">
+                    <a href="#headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa-solid fa-thumbs-down fa-2x text-white"></i>
+                        </div>
+                        <h5 class="mb-0">Cyber Abuse</h5>
+                    </div>
+                    <span>Cyber-based abuse involves any kind of child abuse that is meted out with the help of technology.</span>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!--Accordian Start-->
+    <div class="container-xxl py-3 px-1 accordion" id="accordionExample">
+
+        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+          <h1 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Physical Abuse
+            </button>
+          </h1>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="row g-4">
+                <div class="col-md-5 py-2 px-lg-4">
+                    <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                        <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/nmCEg46M05U?si=VWjWwyhmz08L8BpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-7 py-2 px-lg-4">
+                    <p class="lead">
+                        Physical abuse is a serious violation of child protection. Physical abuse refers to any action that physically injures or harms a child intentionally. This can include hitting (with and without the use of objects), beating, shaking, kicking, burning, biting, choking, poisoning, or any other act that causes physical harm or injury to a child. Corporal punishment is also a form of physical abuse. 
+                    </p>
+                </div>
+                <div class="col-md-12 py-2 px-lg-4">
+                    <p>
+                        <strong>How to identify physical abuse?</strong>
+                        <br>
+                        Identifying physical abuse involves recognizing both physical and behavioural signs in children. Educators, caregivers, and community members must be vigilant and aware of these indicators. However, not all suspected physical injuries and symptoms are cases of abuse. But all such cases deserve equally serious attention and fast action.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><strong>1. Physical Signs</strong>
+                            <ul>
+                              <li>Unexplained Injuries: Bruises, burns, fractures, or cuts that cannot be logically explained.</li>
+                              <li>Chronic Health Problems: The child faces chronic pain, gastrointestinal disorders, and headaches without any logical explanation. </li>
+                              <li>Developmental Delay: There is a delay in the child’s physical development, including motor skills and physical growth.</li>
+                              <li>Injuries with Patterns: Marks or injuries that resemble the shape of an object (e.g., belt buckle, handprint).</li>
+                              <li>Injuries with Patterns: Marks or injuries that resemble the shape of an object (e.g., belt buckle, handprint).</li>
+                              <li>Inconsistent Explanations: The child's explanation of how an injury occurred does not match the severity or type of injury.</li>
+                            </ul>
+                        </li>
+                        <li><strong>2. Behavioural Signs</strong>
+                            <ul>
+                              <li>Unexplained Injuries: Bruises, burns, fractures, or cuts that cannot be logically explained.</li>
+                              <li>Chronic Health Problems: The child faces chronic pain, gastrointestinal disorders, and headaches without any logical explanation. </li>
+                              <li>Developmental Delay: There is a delay in the child’s physical development, including motor skills and physical growth.</li>
+                              <li>Injuries with Patterns: Marks or injuries that resemble the shape of an object (e.g., belt buckle, handprint).</li>
+                              <li>Injuries with Patterns: Marks or injuries that resemble the shape of an object (e.g., belt buckle, handprint).</li>
+                              <li>Inconsistent Explanations: The child's explanation of how an injury occurred does not match the severity or type of injury.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Emotional Abuse, Neglect and Negligent Treatment
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row g-4">
+                    <div class="col-md-5 py-2 px-lg-4">
+                        <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                            <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/EHCeodippgo?si=aPDHXqbI0rBGWeK5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-2 px-lg-4">
+                        <p class="lead">
+                            Any act that results in psychological harm or trauma to a child, including verbal abuse, threats, rejection, isolation, or belittling behaviours that impact a child's self-esteem and emotional well-being. Unlike physical abuse, emotional abuse leaves no visible scars, but the impact can be equally, if not more, devastating. 
+                        </p>
+                    </div>
+                    <div class="col-md-12 py-2 px-lg-4">
+                        <p>
+                            <strong>How to identify Emotional Abuse?</strong>
+                            <br>
+                            Recognizing emotional abuse can be challenging because the signs are often less obvious than those of physical abuse. However, certain behavioural indicators can suggest a child is experiencing emotional abuse:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <ul>
+                                  <li>Excessive Withdrawal: The child is unusually withdrawn, fearful, or anxious about doing something wrong.</li>
+                                  <li>Extreme Behaviour: Exhibits extreme behaviour, such as overly compliant or extremely aggressive behaviour.</li>
+                                  <li>Developmental Delays: Shows signs of delayed physical, emotional, or intellectual development.</li>
+                                  <li>Low Self-Esteem: Consistently shows low self-esteem or self-worth.</li>
+                                  <li>Difficulty in School: Experiences academic difficulties or a sudden decline in performance.</li>
+                                  <li>Reluctance to Go Home: Shows reluctance to go home or express a desire to stay at school or with friends..</li>
+                                  <li>Behavioural Changes: Sudden changes in behaviour, such as bedwetting or self-harm.</li>
+                                  <li>Mental Health Disorders: Shows signs of anxiety and depression.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Sexual Abuse
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row g-4">
+                    <div class="col-md-5 py-2 px-lg-4">
+                        <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                            <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/STyNOVjgxcM?si=q6NTTZjWw0SfxGh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-2 px-lg-4">
+                        <p class="lead">
+                            Sexual abuse is a grave violation of a child's rights and dignity, involving any form of sexual activity imposed upon a child. According to the Protection of Children from Sexual Offences (POCSO) Act, 2012, sexual abuse encompasses a range of offences, including but not limited to:
+                            <ul>
+                                <li>Sexual Assault: Any act that involves physical contact without penetration.</li>
+                                <li>Penetrative Sexual Assault: Involves penetration of the child's private parts.</li>
+                                <li>Sexual Harassment: Includes showing pornography, making sexual remarks, manipulation and coercion or any other form of non-contact sexual abuse.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-12 py-2 px-lg-4">
+                        <p>
+                            <strong>How to identify sexual abuse?</strong>
+                            <br>
+                            Recognizing the signs of sexual abuse is crucial for early intervention and support. Signs may vary depending on the child’s age, personality, and the nature of the abuse, but common indicators include:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><strong>1. Physical Signs:</strong>
+                                <ul>
+                                  <li>Unexplained bruises, bleeding, or injuries in genital areas.</li>
+                                  <li>Pain or itching in genital areas. </li>
+                                  <li>Difficulty walking or sitting.</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Behavioural Signs</strong>
+                                <ul>
+                                  <li>Sudden changes in behaviour, such as aggression or withdrawal.</li>
+                                  <li>Sexual behaviour or knowledge inappropriate for the child’s age.</li>
+                                  <li>Reluctance to be alone with certain individuals.</li>
+                                  <li>Fear of going home or to certain places.</li>
+                                  <li>Regression to earlier behaviours, such as bedwetting.</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Emotional Signs:</strong>
+                                <ul>
+                                  <li>Anxiety, depression, or sudden mood swings.</li>
+                                  <li>Unusual fears or phobias.</li>
+                                  <li>Loss of interest in school or activities they once enjoyed.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Child Labour and Exploitation
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row g-4">
+                    <div class="col-md-5 py-2 px-lg-4">
+                        <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                            <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/WBstK_wbJsM?si=AwACg5DvZsQt4Urp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-2 px-lg-4">
+                        <p class="lead">
+                            Child Labour and Exploitation refer to the kind of work where children are involved that potentially deprives them of their childhood. While not all forms of work are prohibited, this form of exploitation may hinder their right to education and a dignified life. The International Labour Organization (ILO) recognizes child labour as the kind of work that a) is mentally, physically, socially or morally dangerous and harmful to children; and/or b) interferes with their schooling. UNICEF states that close to 1 in 10 children fall victim to Child labour across the world, which includes child trafficking. In India, Child Labour (Prohibition & Regulation) Act, of 1986 prohibits employment of children below the age of 14 years in 18 occupations and 65 processes.
+                        </p>
+                    </div>
+                    <div class="col-md-12 py-2 px-lg-4">
+                        <p>
+                            <strong>How to identify child labour and exploitation?</strong>
+                            <br>
+                            There are a number of signals that can indicate that students in school are involved in child labour and exploitation.  Recognizing child labour and exploitation can be challenging because the signs in isolation or combination do not make it certain that there is involvement of abuse.  However, these are the indicators you can look out for that suggest a child is experiencing abuse:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <ul>
+                                  <li>Exceptionally low attendance: The child may be spotted in the community but may have low attendance in school and school-related activities and services. This affects their academic performance while in school as well. Those on the verge of dropping out of school may also indicate the long hours spent working by the child.</li>
+                                  <li>Exhaustion and ill health: The child may be showing symptoms of tiredness and exhaustion that do not correspond with the kind of activity undertaken in school. The child may also complain of aches, pains and injuries that they have from the work.</li>
+                                  <li>Behavioural changes: Exhibits extreme behaviour, such as overly compliant or extremely aggressive behaviour towards instructions or authority. There may be physical signs like self-harm or bedwetting in younger children. </li>
+                                  <li>Developmental Delays: The child shows symptoms of delayed physical, emotional, or intellectual development. This may be due to a lack of time to keep up with their overall development and school work or a direct impact of undertaking work. This may be reflected in their academic performance. </li>
+                                  <li>Reluctance to go Home: The child may not be eager about going home or may express a desire to stay at school or with friends or in the community</li>
+                                  <li>Mental Health Disorders: Shows signs of anxiety and depression.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="accordion-item wow fadeIn" data-wow-delay="0.9s">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Cyber-Based Abuse and Bullying
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row g-4">
+                    <div class="col-md-5 py-2 px-lg-4">
+                        <div class="position-relative h-100 embed-responsive embed-responsive-16by9">
+                            <iframe class="position-absolute embed-responsive-item w-100 h-100" src="https://www.youtube.com/embed/6ctd75a7_Yw?si=u1z9WX1F1PfJJT3B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-2 px-lg-4">
+                        <p class="lead">
+                            Bullying is when someone repeatedly and intentionally uses hurtful or violent words or actions against another person or a group of people. This causes distress and risk to their wellbeing. There may be use of force, coercion, hurtful teasing or threat, to abuse, dominate or intimidate the child. 
+                            <br>
+                            Cyber-based abuse involves any kind of child abuse that is meted out with the help of technology. Cyberbullying is the use of technology to harass, threaten, embarrass, or target another person. Online threats and mean, aggressive, or rude texts, tweets, posts, or messages all fall under this.
+                        </p>
+                    </div>
+                    <div class="col-md-12 py-2 px-lg-4">
+                        <p>
+                            <strong>How to identify cyber-based abuse and bullying?</strong>
+                            <br>
+                            Recognizing cyber-based abuse and bullying can be challenging. However, certain behavioural, social and physical indicators can suggest a child is experiencing bullying or cyber abuse:
+                        </p>
+                        <ul class="list-unstyled">
+                            <li><strong>1. Physical Signs:</strong>
+                                <ul>
+                                  <li>The child may get bruises, cuts and scratches, torn or dirty clothes while in school.</li>
+                                  <li>The child has missing or damaged property(pencils, books etc.)  on a regular basis after coming to school. </li>
+                                  <li>The child may have poor eating and sleeping habits.</li>
+                                  <li>The child may complain about headaches or stomach aches.</li>
+                                </ul>
+                            </li>
+                            <li><strong>2. Social signs</strong>
+                                <ul>
+                                  <li>The child may not want to go to preschool or school.</li>
+                                  <li>The child may ask to stay close to teachers during break periods or recess.</li>
+                                  <li>The child may start sitting alone in class, not get selected for group activities and be isolated in school overall. The child may also stop participating in activities that they previously took part in.</li>
+                                  <li>The child may not want to participate in the classroom and have difficulty asking or answering questions. This may extend to having trouble with schoolwork or homework.</li>
+                                  <li>Emotional and behavioural changes.</li>
+                                  <li>The child may show noticeable changes in behaviour or show symptoms of mental health disorders such as anxiety or depression.</li>
+                                  <li>There may be observable low self-esteem and self-confidence. They may also want to avoid being the centre of attention or want opportunities to showcase their work unlike before. </li>
+                                  <li>The child may resort to using alcohol or other harmful drugs to cope.</li>
+                                  <li>The child may seem upset during or after being online, or unexpectedly delete social media accounts</li>
+                                </ul>
+                            </li>
+                            <li><strong>3. Cyber abuse may also include:</strong>
+                                <ul>
+                                  <li>Doxxing: Publicly revealing someone's private information, such as home address, phone number, or other personal details, without their consent, often with malicious intent.</li>
+                                  <li>Catfishing and Online Deception: Creating fake profiles or personas to deceive others, often for malicious purposes like manipulation, exploitation, or harassment.</li>
+                                  <li>Sharing of Explicit Content: Sending or receiving sexually explicit messages, photos, or videos among students or by any school stakeholder to a student constitutes child abuse. Additionally, non-consensual sharing of sensitive information or materials.</li>
+                                  <li>Any form of child abuse on social media platforms used for school communications may also fall within the gambit of cyber-based abuse. </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Accordian End-->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-4">
+                    <h5 class="text-white mb-4">A Joint Initiative of The Kolkata Municipal Corporation, Dept of Education & Teach For India</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>KMC HQ, New Market Area, Kolkata</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="./index.html">Home</a>
+                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="./policies.html#KMC_guidelines">KMC Child Safety Guidelines</a>
+                    <a class="btn btn-link" href="#">Recognizing Child Abuse</a>
+                    <a class="btn btn-link" href="./recognize_abuse.html">Responding To Child Abuse</a>
+                    <a class="btn btn-link" href="./login.html">Login</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Enter Your Email To Receive Updates</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">The Kolkata Municipal Corporation</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Report Case float -->
+    <a href="./report_form.html" id="fixed-report-button"  class="btn btn-primary d-block d-lg-none rotate-button">Report Case</a>
+    
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

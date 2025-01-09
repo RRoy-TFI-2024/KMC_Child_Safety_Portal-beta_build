@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KMC Child Safety Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 mt-0">
+        <div class="row gx-0">
+            <div class="col-lg-10 px-5 text-start d-none d-lg-flex">
+                <div class="h-100 d-inline-flex align-items-center me-2">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>KMC HQ, New Market Area, Kolkata</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 me-2">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 05.00 PM</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ms-2 ">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2 px-5 text-center d-flex"> 
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-3 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link" href="">English</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">हिन्दी</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center ps-2 pe-2 rounded-0 border-0 border-end border-secondary">
+                    <small><a class="btn btn-square btn-link " href="">বাংলা</a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+   <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img src="./img/kmc logo.png" alt="KMC-Logo" class="d-inline-block align-text-top mh-100 mw-100">
+            <h2 class="m-0 text-primary">KMC Child Safety Portal</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="./index.html" class="nav-item nav-link">Home</a>
+                <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                <a href="./login.html" class="nav-item nav-link">Login</a>
+                <div class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Understanding Child Safety</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item active">Child Safety Policies</a>
+                        <a href="./recognize_abuse.html" class="dropdown-item">Recognizing Child Abuse</a>
+                        <a href="./response_to_abuse.html" class="dropdown-item">Responding To Child Abuse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./report_form.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Report Case<i class="fa fa-arrow-right ms-3"></i></a>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel_2.jpg'>">
+                <img class="img-fluid" style="height: 90vh" src="img/carousel_2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Child Safety Policies</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Policies and Acts Related To The Protection Of Children</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Child Safety Policies</h6>
+                <h1 class="mb-4">Information on Child Safety Policies</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-12 col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden" id="KMC_guidelines">
+                        <img class="img-fluid" src="img/KMC_backdrop_logo.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-school-circle-check fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">KMC Guidelines for Child Safety From Sexual Abuses</h4>
+                            <p><b>Read the KMC guidelines for the child safety from sexual abuses in the school</b>
+                            <br>
+                            In complaiance with the direction of the Hon. High Court passed in WP 31138(W) of 2017 dated 16th Nov 2018, and in pursuant to provision of the Revised Final Report dated 16th Nov 2018, the guideline on "The child safety from sexual abuses in the school" was introduced. The guideline will empower students to learn about safety measures against sexual abuse in school.
+                            <br>
+                            <br>
+                            <br>
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="https://drive.google.com/uc?export=download&id=1XEYVphYoWYhitrQvO0imuZmTUoyouS_1">Download PDF <i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden" id="jj-act">
+                        <img class="img-fluid" src="img/act_1.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-scale-balanced fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">JJ Act 2015</h4>
+                            <p><b>The Juvenile Justice (Care and Protection of Children) Act, 2015' came into force from January 15, 2016.</b>
+                               <br>
+                               It aims to consolidate and amend the law relating to children alleged and found to be in conflict with law and children in need of care and protection by catering to their basic needs through proper care, protection, development, treatment, social re-integration, by adopting a child-friendly approach in the adjudication and disposal of matters in the best interest of children and for their rehabilitation through processes provided, and institutions and bodies established, herein under and for matters connected therewith or incidental thereto.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://drive.google.com/uc?export=download&id=19J9eqIE1tSKKKm-1an1HJa6BN1uXly8h" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Download PDF <i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://wbcpcr.org/jj-act.php" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Visit WBCPCR Website <i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden" id="pocso-act">
+                        <img class="img-fluid" src="img/act_2.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-hands-holding-child fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">POCSO Act 2012</h4>
+                            <p><b>'The Protection of Children from Sexual Offences Act, 2012' came into force from June 19, 2012.</b>
+                                <br>
+                                The Act has been drafted to strengthen the legal provisions for the protection of children from sexual abuse and exploitation. It defines a child as any person below the age of 18 years and provides protection to all children under the age of 18 years from the offences of sexual assault, sexual harassment and pornography. These offences have been clearly defined for the first time in law. The Act provides for stringent punishments, which have been graded as per the gravity of the offence.                                                         
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://drive.google.com/uc?export=download&id=104HoUMMBTaEhmjS1Re0bdmkQ400Mlybl" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Download PDF <i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://wbcpcr.org/pocso-act.php" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Visit WBCPCR Website <i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item rounded overflow-hidden" id="rte-act">
+                        <img class="img-fluid" src="img/act_3.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-book-open-reader fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">RTE Act 2009</h4>
+                            <p><b>'The Right of Children to Free and Compulsory Education Act, 2009' or 'Right to Education Act also known as RTE', came into force from April 1, 2010.</b>
+                                <br>
+                                The Act describes the modalities of the importance of free and compulsory education for children between 6 and 14 in India under Article 21A of the Indian Constitution. The words ‘free and compulsory’. ‘Free education’ means that no child, other than schools not supported by the appropriate Government, shall be liable to pay any kind of fee or charges or expenses which may prevent him or her from pursuing and completing elementary education. ‘Compulsory education’ casts an obligation on the appropriate Government to provide completion of elementary education by all children in the 6-14 age group.
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://drive.google.com/uc?export=download&id=1VHyEsvZEqp3fQhHqGM8m6PartHz7x0Qi" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Download PDF <i class="fa-solid fa-download"></i></a>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <a href="https://wbcpcr.org/rte-act.php" class="btn btn-primary rounded-pill py-3 px-4 mt-3">Visit WBCPCR Website <i class="fa-solid fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-4">
+                    <h5 class="text-white mb-4">A Joint Initiative of The Kolkata Municipal Corporation, Dept of Education & Teach For India</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>KMC HQ, New Market Area, Kolkata</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="./index.html">Home</a>
+                    <a class="btn btn-link" href="./contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="./policies.html#KMC_guidelines">KMC Child Safety Guidelines</a>
+                    <a class="btn btn-link" href="./recognize_abuse.html">Recognizing Child Abuse</a>
+                    <a class="btn btn-link" href="./response_to_abuse.html">Responding To Child Abuse</a>
+                    <a class="btn btn-link" href="./login.html">Login</a>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Enter Your Email To Receive Updates</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">The Kolkata Municipal Corporation</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Report Case float -->
+    <a href="./report_form.html" id="fixed-report-button"  class="btn btn-primary d-block d-lg-none rotate-button">Report Case</a>
+    
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
