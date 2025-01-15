@@ -116,7 +116,7 @@ var myLineChart = new Chart(lineChart, {
       ],
       datasets: [
         {
-          label: "Active Users",
+          label: "Cases Reported",
           borderColor: "#1d7af3",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#1d7af3",
@@ -128,7 +128,7 @@ var myLineChart = new Chart(lineChart, {
           fill: true,
           borderWidth: 2,
           data: [
-            542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900,
+            1, 0, 0, 2, 0, 2, 0, 2, 0, 0, 0,1
           ],
         },
       ],
